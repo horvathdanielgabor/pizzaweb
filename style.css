@@ -1,0 +1,27 @@
+H1{
+    margin-top: -50px;
+    color: white;
+}
+
+nav{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.fejlec{
+    width: 100%;
+    padding: 20px;
+    background-image: url(kepek/Pizza_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.nav-link{
+    color: white;
+}
