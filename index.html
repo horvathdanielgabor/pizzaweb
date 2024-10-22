@@ -10,18 +10,25 @@
 </head>
 <body>
     <header class="fejlec">
+        <div class="main_kep">
+            <picture>
+                <img src="kepek/Pizza_main.jpg" width="1423" height="671">
+            </picture>
+        </div>
         <nav>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link active" href="">Kezdőlap</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="">/  Menü</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pizza</a></li>
-                        <li><a class="dropdown-item" href="#">Menü</a></li>
-                        <li><a class="dropdown-item" href="#">Italok</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"> Menu </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Pizza</a></li>
+                          <li><a class="dropdown-item" href="#">Menu</a></li>
+                          <li><a class="dropdown-item" href="#">Italok</a></li>
+                        </ul>
+                      </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">/  Rólunk</a>
@@ -32,7 +39,6 @@
             </ul>
             <H1>Pizzéria</H1>
         </nav>
-        
     </header>
 </body>
 </html>
