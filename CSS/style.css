@@ -9,7 +9,7 @@ H1{
 }
 
 nav{
-    margin-top: -100px;
+    margin-top: -700px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -33,6 +33,27 @@ nav{
     color: white;
 }
 
+.btn:focus{
+    box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.active{
+    color: rgba(255, 255, 255, 1);
+}
+
 .nav-link{
     color: rgba(255, 255, 255, 0.75);
     text-transform: uppercase;
@@ -42,4 +63,9 @@ nav{
 
 .nav-link:hover{
     color: white;
+}
+
+#tortenet{
+    margin-top: 575px;
+    float: right;
 }
