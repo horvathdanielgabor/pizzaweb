@@ -69,3 +69,36 @@ nav{
     margin-top: 575px;
     float: right;
 }
+
+.left{
+    float: left;
+    margin: 50px 50px;
+    text-align: right;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.tortenet{
+    margin: 50px auto;
+    margin-right: 250px;
+}
+
+.tortenet>h4{
+    margin-left: 605px;
+}
+
+#menu{
+    text-align: center;
+    background-color: rgb(16, 16, 16);
+}
+
+#menu>p{
+    margin: 10px 350px;
+    font-size: large;
+}
+
+#menu>div>button{
+    border: 1px solid white;
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
