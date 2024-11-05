@@ -17,6 +17,14 @@ nav{
 .fejlec{
     width: 100%;
     padding: 20px;
+    background-image: url(/kepek/Pizza_main.jpg);
+}
+
+.tortenet_link{
+    margin: auto auto;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .main_kep{
@@ -66,7 +74,7 @@ nav{
 }
 
 #tortenet{
-    margin-top: 575px;
+    margin-top: 550px;
     float: right;
 }
 
@@ -84,7 +92,9 @@ nav{
 }
 
 .tortenet>h4{
-    margin-left: 605px;
+    font-size: 12;
+    margin-left: 620px;
+    font-variant: small-caps;
 }
 
 #menu{
