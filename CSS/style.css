@@ -9,21 +9,25 @@ H1{
 }
 
 nav{
-    margin-top: -700px;
+    margin-top: 10px;
+    margin-bottom: 600px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.fejlec{
+#fejlec{
     width: 100%;
     padding: 20px;
-    background-image: url(/kepek/Pizza_main.jpg);
+    background: url(/kepek/Pizza_main.jpg) no-repeat fixed center;
 }
 
 .tortenet_link{
-    margin: auto auto;
-    margin-top: 100px;
-    margin-left: 100px;
+    margin: 50%;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 220%;
+}
+
+.tortenet_link:hover{
     color: rgba(255, 255, 255, 0.95);
 }
 
@@ -74,8 +78,8 @@ nav{
 }
 
 #tortenet{
-    margin-top: 550px;
     float: right;
+    background-color: rgb(36, 36, 36);
 }
 
 .left{
@@ -111,4 +115,9 @@ nav{
     border: 1px solid white;
     background-color: rgb(16, 16, 16);
     color: white;
+}
+
+#specilitas{
+    background-color:rgb(36, 36, 36);
+    text-align: center;
 }
