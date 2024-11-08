@@ -77,6 +77,10 @@ nav{
     color: white;
 }
 
+.nav-link:focus{
+    color: rgba(255, 255, 255, 0.75);
+}
+
 #tortenet{
     float: right;
     background-color: rgb(36, 36, 36);
@@ -87,11 +91,11 @@ nav{
     margin: 50px 50px;
     text-align: right;
     margin-left: 300px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .tortenet{
-    margin: 50px auto;
+    margin: 90px auto;
     margin-right: 250px;
 }
 
@@ -99,6 +103,10 @@ nav{
     font-size: 12;
     margin-left: 620px;
     font-variant: small-caps;
+}
+
+.tortenet>h5{
+    font-style: italic;
 }
 
 #menu{
@@ -120,4 +128,12 @@ nav{
 #specilitas{
     background-color:rgb(36, 36, 36);
     text-align: center;
+}
+
+.header{
+
+}
+
+p{
+    color: rgb(206, 206, 206);
 }
