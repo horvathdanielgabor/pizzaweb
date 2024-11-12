@@ -137,3 +137,21 @@ nav{
 p{
     color: rgb(206, 206, 206);
 }
+
+.row{
+    margin: 50px 250px;
+}
+
+.kep2{
+    height: 125%;
+}
+
+.kep3{
+    margin-left: -20%;
+    width: 80%;
+}
+
+.kep4{
+    margin-left: -70%;
+    height: 62%;
+}
