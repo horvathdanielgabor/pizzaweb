@@ -130,10 +130,6 @@ nav{
     text-align: center;
 }
 
-.header{
-
-}
-
 p{
     color: rgb(206, 206, 206);
 }
@@ -143,15 +139,27 @@ p{
 }
 
 .kep2{
-    height: 125%;
+    height: 118%;
+    width: 89%;
+    margin-left: -12%;
 }
 
 .kep3{
     margin-left: -20%;
+    height: 54%;
     width: 80%;
 }
 
 .kep4{
-    margin-left: -70%;
-    height: 62%;
+    margin-left: -55%;
+    height: 54%;
+    width: 100%;
+}
+
+.kep5{
+    margin-top: 20%;
+    margin-left: -54%;
+    height:44%;
+    max-width: 200%;
+    width: 122%;
 }
