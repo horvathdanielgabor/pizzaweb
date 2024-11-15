@@ -88,28 +88,38 @@ nav{
 
 .left{
     float: left;
-    margin: 50px 50px;
+    margin: 12% 3%;
     text-align: right;
-    margin-left: 300px;
-    margin-top: 90px;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 .tortenet{
-    margin: 90px auto;
-    margin-right: 250px;
+    margin: 5% auto;
+    margin-right: 16.2%;
 }
 
 .tortenet>h4{
-    font-size: 12;
-    margin-left: 620px;
+    font-size: 120%;
+    margin-left: 43%;
     font-variant: small-caps;
 }
 
-.tortenet>h5{
-    font-style: italic;
+.tortenet>p{
+    
+}
+
+.left>h2{
+    font-size: 175%;
+}
+
+.left>h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(176, 176, 176);
 }
 
 #menu{
+    margin-top: 23%;
     text-align: center;
     background-color: rgb(16, 16, 16);
 }
@@ -123,6 +133,17 @@ nav{
     border: 1px solid white;
     background-color: rgb(16, 16, 16);
     color: white;
+    padding: 1% 5%;
+    margin: 0 1%;
+    margin-bottom: 6%;
+}
+
+#menu>div>button:hover{
+    color: rgba(255, 255, 255, 0.95);
+}
+
+#menu>h2{
+    padding-top: 5%;
 }
 
 #specilitas{
@@ -131,7 +152,7 @@ nav{
 }
 
 p{
-    color: rgb(206, 206, 206);
+    color: rgb(176, 176, 176);
 }
 
 .row{
