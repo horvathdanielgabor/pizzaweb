@@ -149,6 +149,7 @@ nav{
 #specilitas{
     background-color:rgb(36, 36, 36);
     text-align: center;
+    height: 1000px;
 }
 
 p{
@@ -159,38 +160,52 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 2.25fr) 2fr;
     grid-template-rows: 5.5fr 1.5fr 3fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin: auto;
+    width: 950px;
+    height: 1px;
 }
 
 .Pizza_main_kep {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 3 / 3;
     background: url(/kepek/Pizza_main.jpg) no-repeat center;
-    padding-top: 400px;
+    padding-top: 325px;
+    height: 435px;
 }
 
-.Pizza_main_kep>p {
+div[class$="_kep"] a {
     color: white;
+    text-decoration: none;
+}
+
+div[class$="_kep"] a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .Steak_kep {
-    grid-area: 1 / 3 / 3 / 4;
+    grid-area: 1 / 3 / 4 / 4;
     background: url(/kepek/Steak.jpg) no-repeat center;
-    padding-top: 550px;
+    padding-top: 490px;
+    height: 525px;
 }
 .salata_kep {
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 5 / 2;
     background: url(/kepek/salata.jpg) no-repeat center;
     padding-top: 50px;
-    height: 300px;
+    height: 275px;
 }
 .Pizza_kep {
-    grid-area: 2 / 2 / 4 / 3;
+    grid-area: 3 / 2 / 5 / 3;
     background: url(/kepek/Pizza.jpg) no-repeat center;
     padding-top: 100px;
+    height: 275px;
 }
 .leves_kep {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 4 / 3 / 5 / 4;
     background: url(/kepek/leves.jpg) no-repeat center;
     padding-top: 100px;
+    margin-top: -20%;
+    height: 175px;
 }
