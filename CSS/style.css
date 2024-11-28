@@ -119,7 +119,7 @@ nav{
 }
 
 #menu{
-    margin-top: 23%;
+    padding-top: 20%;
     text-align: center;
     background-color: rgb(16, 16, 16);
 }
@@ -147,6 +147,7 @@ nav{
 }
 
 #specilitas{
+    padding-top: 3%;
     background-color:rgb(36, 36, 36);
     text-align: center;
     height: 1000px;
@@ -156,7 +157,7 @@ p{
     color: rgb(176, 176, 176);
 }
 
-.parent {
+.special {
     display: grid;
     grid-template-columns: repeat(2, 2.25fr) 2fr;
     grid-template-rows: 5.5fr 1.5fr 3fr;
@@ -170,8 +171,12 @@ p{
 .Pizza_main_kep {
     grid-area: 1 / 1 / 3 / 3;
     background: url(/kepek/Pizza_main.jpg) no-repeat center;
-    padding-top: 325px;
+    padding-top: 400px;
     height: 435px;
+}
+
+.Pizza_main_kep:hover {
+    
 }
 
 div[class$="_kep"] a {
@@ -190,22 +195,62 @@ div[class$="_kep"] a:hover {
     padding-top: 490px;
     height: 525px;
 }
+
 .salata_kep {
     grid-area: 3 / 1 / 5 / 2;
     background: url(/kepek/salata.jpg) no-repeat center;
-    padding-top: 50px;
+    padding-top: 240px;
     height: 275px;
 }
+
 .Pizza_kep {
     grid-area: 3 / 2 / 5 / 3;
     background: url(/kepek/Pizza.jpg) no-repeat center;
-    padding-top: 100px;
+    padding-top: 240px;
     height: 275px;
 }
+
 .leves_kep {
     grid-area: 4 / 3 / 5 / 4;
     background: url(/kepek/leves.jpg) no-repeat center;
-    padding-top: 100px;
-    margin-top: -20%;
-    height: 175px;
+    padding-top: 170px;
+    margin-top: -80px;
+    height: 200px;
+}
+
+#lablec {
+    padding: 5% 20%;
+    background-color: rgb(16, 16, 16);
+}
+
+.nyitva {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.var{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.ido {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.proba {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.elerhetosegek {
+    margin: auto;
+    padding: 3% 0;
+}
+
+.elerhetosegek h6 {
+    text-align: center;
+    color: rgb(176, 176, 176);
+    font-size: 85%;
+    font-weight: lighter;
 }
