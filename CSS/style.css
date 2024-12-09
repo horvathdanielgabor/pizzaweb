@@ -20,17 +20,20 @@ nav{
     padding: 20px;
     background: url(../kepek/Pizza_main.jpg) no-repeat;
     background-size: 115%;
-    background-position: 50% 55%;
+    background-position: 50% 35%;
 
 }
 
 .tortenet_link{
-    margin: 50%;
+    margin: 26% 50%;
+}
+
+.tortenet_link a{
     color: rgba(255, 255, 255, 0.95);
     font-size: 220%;
 }
 
-.tortenet_link:hover{
+.tortenet_link a:hover{
     color: rgba(255, 255, 255, 0.95);
 }
 
@@ -100,7 +103,7 @@ nav{
 
 .tortenet{
     margin: 5% auto;
-    margin-right: 16.3%;
+    margin-right: 26.3%;
 }
 
 .tortenet>h4{
