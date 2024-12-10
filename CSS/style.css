@@ -25,7 +25,7 @@ nav{
 }
 
 .tortenet_link{
-    margin: 26% 50%;
+    margin: 33% 50%;
 }
 
 .tortenet_link a{
@@ -126,7 +126,7 @@ nav{
 }
 
 #menu{
-    padding-top: 24%;
+    padding-top: 27%;
     text-align: center;
     background-color: rgb(16, 16, 16);
 }
@@ -161,7 +161,7 @@ nav{
 }
 
 #specilitas{
-    padding-top: 3%;
+    padding-top: 6%;
     background-color:rgb(36, 36, 36);
     text-align: center;
     height: 1000px;
@@ -236,6 +236,7 @@ div[class$="_kep"] a:hover {
 
 #lablec {
     padding: 5% 22%;
+    padding-bottom: 1%;
     background-color: rgb(16, 16, 16);
     
 }
