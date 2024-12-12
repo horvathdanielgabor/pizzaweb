@@ -91,45 +91,45 @@ nav{
 }
 
 #tortenet{
-    padding-top: 0.25%;
-    float: right;
+    display: grid;
+    grid-template-columns: 0.4fr 0.47fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
     background-color: rgb(36, 36, 36);
+    padding: 5% 0%;
 }
 
-.left{
-    float: left;
-    margin: 12% 3%;
+.felirat1{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 175%;
     text-align: right;
-    margin-left: 18.75%;
-    margin-top: 5%;
+    font-variant: small-caps;
+
+}
+
+.felirat2{
+    grid-area: 2 / 1 / 3 / 2;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(176, 176, 176);
+    text-align: right;
 }
 
 .tortenet{
-    margin: 5% auto;
-    margin-right: 17.8%;
-}
-
-.tortenet h4{
+    grid-area: 1 / 2 / 3 / 3;
     font-size: 120%;
-    margin-left: 43%;
-    font-variant: small-caps;
-}
-
-.tortenet>p{
-    font-size: 110%;
-}
-
-.left>h2{
-    font-size: 175%;
-}
-
-.left>h5{
-    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
     color: rgb(176, 176, 176);
 }
 
+.fogszam{
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 110%;
+    text-align: left;
+    font-variant: small-caps;
+}
+
 #menu{
-    padding-top: 27%;
     text-align: center;
     background-color: rgb(16, 16, 16);
 }
