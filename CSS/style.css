@@ -86,7 +86,7 @@ nav{
     color: rgba(255, 255, 255, 0.75);
 }
 
-.shadow div{
+.shadow{
     background: linear-gradient(rgba(0,0,0,0.25%),rgba(0,0,0,0%));
 }
 
@@ -102,7 +102,8 @@ nav{
 
 .felirat1{
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 175%;
+    font-size: 140%;
+    font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
     text-align: right;
     font-variant: small-caps;
 
@@ -110,14 +111,16 @@ nav{
 
 .felirat2{
     grid-area: 2 / 1 / 3 / 2;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.2px;
+    font-family: Playfair Display Flex,Playfair-Display-Fallback,Apple Color Emoji,Noto Color Emoji,serif;
     color: rgb(176, 176, 176);
     text-align: right;
 }
 
 .tortenet{
     grid-area: 1 / 2 / 3 / 3;
-    font-size: 120%;
+    font-size: 17.2px;
+    font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
     text-align: left;
     color: rgb(176, 176, 176);
 }
@@ -296,4 +299,48 @@ div[class$="_kep"] a:hover {
     color: rgb(176, 176, 176);
     font-size: 85%;
     font-weight: lighter;
+}
+
+@media only screen and (max-width: 599px){
+    #tortenet{
+        display: grid;
+        grid-template-columns: 0.4fr 0.47fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
+        background-color: rgb(36, 36, 36);
+        padding: 5% 0%;
+    }
+    
+    .felirat1{
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 140%;
+        font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
+        text-align: right;
+        font-variant: small-caps;
+    
+    }
+    
+    .felirat2{
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 17.2px;
+        font-family: Playfair Display Flex,Playfair-Display-Fallback,Apple Color Emoji,Noto Color Emoji,serif;
+        color: rgb(176, 176, 176);
+        text-align: right;
+    }
+    
+    .tortenet{
+        grid-area: 1 / 2 / 3 / 3;
+        font-size: 17.2px;
+        font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
+        text-align: left;
+        color: rgb(176, 176, 176);
+    }
+    
+    .fogszam{
+        grid-area: 3 / 2 / 4 / 3;
+        font-size: 110%;
+        text-align: left;
+        font-variant: small-caps;
+    }
 }
