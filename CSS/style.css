@@ -155,7 +155,7 @@ nav{
     justify-content: center;
 }
 
-.flex-containers>button{
+.flex-containers>button {
     border: 1px solid white;
     background-color: rgb(16, 16, 16);
     color: white;
@@ -164,23 +164,26 @@ nav{
     margin-bottom: 6%;
 }
 
-#menu>div>button:hover{
+#menu>div>button:hover {
     color: rgba(255, 255, 255, 0.95);
 }
 
-#menu>h2{
+#menu>h2 {
     padding-top: 6%;
     font-size: 28px;
 }
 
-#specilitas{
-    padding-top: 6%;
+#specilitas {
     background-color:rgb(36, 36, 36);
     text-align: center;
-    height: 1000px;
+    height: auto;
 }
 
-#specilitas h4 {
+.header {
+    margin-top: 5%;
+}
+
+.header h4 {
     color: rgb(176, 176, 176);
     font-size: 23.2px;
     font-family: Playfair Display Flex,Playfair-Display-Fallback,Apple Color Emoji,Noto Color Emoji,serif;
@@ -199,7 +202,8 @@ p{
     grid-row-gap: 40px;
     margin: auto;
     width: 950px;
-    height: 1px;
+    height: auto;
+    margin-bottom: 5%;
 }
 
 .Pizza_main_kep {
@@ -255,21 +259,20 @@ div[class$="_kep"] a:hover {
 }
 
 #lablec {
-    margin: 0% auto;
-    padding: 22% 0%;
-    padding-bottom: 1%;
     background-color: rgb(16, 16, 16);
-    
+    height: auto;
+    padding: 5% 0%;
 }
 
 .nyitva {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 0.8fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 0.8fr 5fr;
     grid-column-gap: 32px;
-    grid-row-gap: 24px;
-    margin: 0% auto;
+    grid-row-gap: 4px;
     width: 80%;
+    height: auto;
+    margin: 0% auto 0%;
 }
 
 .nyitva>.ido>h6 {
@@ -322,9 +325,9 @@ div[class$="_kep"] a:hover {
 }
 
 .elerhetosegek {
-    margin: auto;
-    padding: 3% 0;
+    margin: 0% auto;
     font-size: large;
+    height: auto;
 }
 
 .elerhetosegek h6 {
@@ -351,7 +354,6 @@ div[class$="_kep"] a:hover {
         font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
         text-align: right;
         font-variant: small-caps;
-    
     }
     
     .felirat2{
@@ -381,6 +383,10 @@ div[class$="_kep"] a:hover {
         margin: 10px 10% 40px;
     }
 
+    #specilitas {
+        height: auto;
+    }
+
     .special {
         display: grid;
         grid-template-columns: repeat(2, 2.25fr) 2fr;
@@ -388,8 +394,9 @@ div[class$="_kep"] a:hover {
         grid-column-gap: 5%;
         grid-row-gap: auto;
         margin: auto;
-        width: 100%;
-        height: 1px;
+        width: 950px;
+        height: auto;
+        margin-bottom: 5%;
     }
 
     .Pizza_main_kep {
@@ -435,11 +442,11 @@ div[class$="_kep"] a:hover {
     }
 }
 
-@media only screen and (max-width: 889px){
+@media only screen and (max-width: 599px){
     .flex-containers {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .flex-containers>button{
@@ -460,22 +467,22 @@ div[class$="_kep"] a:hover {
         grid-row-gap: auto;
         margin: auto;
         width: 70%;
-        height: 1px;
+        height: auto;
     }
 
     .Pizza_main_kep {
         grid-area: 1 / 1 / 2 / 2;
         background: url(../kepek/Pizza_main.jpg) no-repeat center;
-        padding-top: 42px;
-        height: 95px;
+        padding-top: 242px;
+        height: 295px;
         background-size: 100%;
     }
 
     .Steak_kep {
         grid-area: 2 / 1 / 3 / 2;
         background: url(../kepek/Steak.jpg) no-repeat center;
-        padding-top: 180px;
-        height: 525px;
+        padding-top: 280px;
+        height: 825px;
         background-size: 310%;
     }
     
