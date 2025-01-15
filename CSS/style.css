@@ -10,27 +10,34 @@ H1{
     font-size: 32px;
 }
 
-nav{
-    margin-top: 10px;
-    margin-left: 0px;
-}
-
 #fejlec{
     width: 100%;
-    height: 585px;
-    padding: 20px;
+    height: auto;
+    padding: 0% 20px;
     background: url(../kepek/Pizza_main.jpg) no-repeat;
     background-size: 115%;
     background-position: 50% 35%;
 }
 
+nav{
+    padding-top: 1%;
+    margin-left: 0px;
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-variant: small-caps;
+}
+
 .tortenet_link{
-    margin: 33% 50%;
+    margin: 30% 50% 0%;
 }
 
 .tortenet_link a{
     color: rgba(255, 255, 255, 0.95);
     font-size: 220%;
+    height: 1px;
 }
 
 .tortenet_link a:hover{
@@ -443,6 +450,43 @@ div[class$="_kep"] a:hover {
 }
 
 @media only screen and (max-width: 599px){
+    #fejlec{
+        width: 100%;
+        height: auto;
+        padding: 0% 20px;
+        background: url(../kepek/Pizza_main.jpg) no-repeat;
+        background-size: 155%;
+        background-position: 50% 35%;
+    }
+
+    #tortenet{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 4fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        background-color: rgb(36, 36, 36);
+        height: auto;
+        padding: 0% 10px;
+        margin: 5% auto;
+    }
+
+    .felirat1{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .felirat2{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .tortenet{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .fogszam{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
     .flex-containers {
         display: flex;
         flex-direction: column;
