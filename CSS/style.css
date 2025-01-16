@@ -11,7 +11,7 @@ H1{
 }
 
 #fejlec{
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 0% 20px;
     background: url(../kepek/Pizza_main.jpg) no-repeat;
@@ -28,6 +28,11 @@ nav{
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-variant: small-caps;
+}
+
+.nav-link::after {
+    content: " / ";
+    position: relative;
 }
 
 .tortenet_link{
@@ -75,7 +80,7 @@ nav{
     color: rgba(255, 255, 255, 0.95);
 }
 
-.active{
+.navbar-nav .nav-link.active{
     color: rgba(255, 255, 255, 1);
 }
 
@@ -100,11 +105,13 @@ nav{
 
 #tortenet{
     display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.3fr 0.8fr;
+    grid-template-rows: 0.2fr 1.4fr 0.5fr;
     grid-column-gap: 40px;
     grid-row-gap: 10px;
     background-color: rgb(36, 36, 36);
+    width: 870px;
+    padding: 0;
     margin: 5% auto;
 }
 
@@ -152,7 +159,8 @@ nav{
     font-size: 20px;
 }
 
-#menu>p{
+#menu p{
+    width: 38%;
     margin: 10px auto 40px;
     font-size: large;
 }
@@ -184,13 +192,19 @@ nav{
     background-color:rgb(36, 36, 36);
     text-align: center;
     height: auto;
+    padding: 0;
 }
 
 .header {
     margin-top: 5%;
 }
 
+.header h2{
+    width: auto;
+}
+
 .header h4 {
+    width: auto;
     color: rgb(176, 176, 176);
     font-size: 23.2px;
     font-family: Playfair Display Flex,Playfair-Display-Fallback,Apple Color Emoji,Noto Color Emoji,serif;
@@ -219,6 +233,7 @@ p{
     padding-top: 400px;
     height: 435px;
     background-size: 100%;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.8) inset;
 }
 
 div[class$="_kep"] a {
@@ -237,6 +252,7 @@ div[class$="_kep"] a:hover {
     padding-top: 490px;
     height: 525px;
     background-size: 310%;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.8) inset;
 }
 
 .salata_kep {
@@ -245,6 +261,7 @@ div[class$="_kep"] a:hover {
     padding-top: 240px;
     height: 275px;
     background-size: 140%;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.8) inset;
 }
 
 .Pizza_kep {
@@ -253,6 +270,7 @@ div[class$="_kep"] a:hover {
     padding-top: 240px;
     height: 275px;
     background-size: 110%;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.8) inset;
 }
 
 .leves_kep {
@@ -263,6 +281,7 @@ div[class$="_kep"] a:hover {
     height: 200px;
     background-size: 110%;
     background-position: 52% 54%;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.8) inset;
 }
 
 #lablec {
@@ -294,6 +313,7 @@ div[class$="_kep"] a:hover {
 
 .var {
     grid-area: 1 / 1 / 2 / 2;
+    text-align: right;
 }
 
 .ido1 {
@@ -345,61 +365,12 @@ div[class$="_kep"] a:hover {
 }
 
 @media only screen and (max-width: 1039px){
-    #tortenet{
-        display: grid;
-        grid-template-columns: 0.4fr 0.47fr;
-        grid-template-rows: 0.5fr 2fr 0.5fr;
-        grid-column-gap: 30px;
-        grid-row-gap: 10px;
-        background-color: rgb(36, 36, 36);
-        padding: 5% 0%;
-    }
-    
-    .felirat1{
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: 140%;
-        font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
-        text-align: right;
-        font-variant: small-caps;
-    }
-    
-    .felirat2{
-        grid-area: 2 / 1 / 3 / 2;
-        font-size: 17.2px;
-        font-family: Playfair Display Flex,Playfair-Display-Fallback,Apple Color Emoji,Noto Color Emoji,serif;
-        color: rgb(176, 176, 176);
-        text-align: right;
-    }
-    
-    .tortenet{
-        grid-area: 1 / 2 / 3 / 3;
-        font-size: 17.2px;
-        font-family: Metropolis,Metropolis-Fallback,Apple Color Emoji,Noto Color Emoji,sans-serif;
-        text-align: left;
-        color: rgb(176, 176, 176);
-    }
-    
-    .fogszam{
-        grid-area: 3 / 2 / 4 / 3;
-        font-size: 110%;
-        text-align: left;
-        font-variant: small-caps;
-    }
-
-    #menu>p{
-        margin: 10px 10% 40px;
-    }
-
-    #specilitas {
-        height: auto;
-    }
-
     .special {
         display: grid;
         grid-template-columns: repeat(2, 2.25fr) 2fr;
         grid-template-rows: 5.5fr 1.5fr 3fr;
         grid-column-gap: 5%;
-        grid-row-gap: auto;
+        grid-row-gap: 0;
         margin: auto;
         width: 950px;
         height: auto;
@@ -449,6 +420,91 @@ div[class$="_kep"] a:hover {
     }
 }
 
+@media only screen and (max-width: 979px) {
+    #tortenet{
+        display: grid;
+        grid-template-columns: 0.3fr 0.8fr;
+        grid-template-rows: 0.2fr 1.4fr 0.5fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 10px;
+        background-color: rgb(36, 36, 36);
+        width: auto;
+        padding: 0;
+        margin: 5% 2%;
+    }
+
+    .special {
+        display: grid;
+        grid-template-columns: repeat(2, 1.5fr) 1.5fr;
+        grid-template-rows: 7fr 1.2fr 4fr;
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .Pizza_main_kep {
+        grid-area: 1 / 1 / 2 / 3;
+        background: url(../kepek/Pizza_main.jpg) no-repeat center;
+        padding-top: 50%;
+        height: auto;
+        background-size: 100%;
+    }
+
+    .Steak_kep {
+        grid-area: 1 / 3 / 3 / 4;
+        background: url(../kepek/Steak.jpg) no-repeat center;
+        padding-top: 120%;
+        height: auto;
+        background-size: 310%;
+    }
+    
+    .salata_kep {
+        grid-area: 2 / 1 / 4 / 2;
+        background: url(../kepek/salata.jpg) no-repeat center;
+        padding-top: 80%;
+        height: auto;
+        background-size: 140%;
+    }
+    
+    .Pizza_kep {
+        grid-area: 2 / 2 / 4 / 3;
+        background: url(../kepek/Pizza.jpg) no-repeat center;
+        padding-top: 80%;
+        height: auto;
+        background-size: 110%;
+    }
+    
+    .leves_kep {
+        grid-area: 3 / 3 / 4 / 4;
+        background: url(../kepek/leves.jpg) no-repeat center;
+        padding-top: 70%;
+        height: auto;
+        background-size: 110%;
+        background-position: 52% 54%;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .nav-link.active{
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    .nav-link{
+        color: rgba(0, 0, 0, 0.75);
+        font-variant: small-caps;
+        font-size: 110%;
+        text-decoration: none;
+    }
+
+    .nav-link:hover{
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
 @media only screen and (max-width: 599px){
     #fejlec{
         width: 100%;
@@ -467,8 +523,8 @@ div[class$="_kep"] a:hover {
         grid-row-gap: 0px;
         background-color: rgb(36, 36, 36);
         height: auto;
-        padding: 0% 10px;
-        margin: 5% auto;
+        width: auto;
+        margin: 5% 1%;
     }
 
     .felirat1{
@@ -485,6 +541,12 @@ div[class$="_kep"] a:hover {
 
     .fogszam{
         grid-area: 4 / 1 / 5 / 2;
+    }
+
+    #menu p{
+        width: 78%;
+        margin: 10px auto 40px;
+        font-size: large;
     }
 
     .flex-containers {
@@ -506,54 +568,85 @@ div[class$="_kep"] a:hover {
     .special {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 5%;
-        grid-row-gap: auto;
+        grid-template-rows: 0.4fr repeat(2, 1fr) 2.5fr 0.6fr;
+        grid-column-gap: 0;
+        grid-row-gap: 2%;
         margin: auto;
-        width: 70%;
+        width: 80%;
         height: auto;
+        margin-bottom: 100px;
     }
 
     .Pizza_main_kep {
         grid-area: 1 / 1 / 2 / 2;
         background: url(../kepek/Pizza_main.jpg) no-repeat center;
-        padding-top: 242px;
-        height: 295px;
+        padding-top: 50%;
+        height: auto;
         background-size: 100%;
     }
 
     .Steak_kep {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 4 / 1 / 5 / 2;
         background: url(../kepek/Steak.jpg) no-repeat center;
-        padding-top: 280px;
-        height: 825px;
+        padding-top: 180%;
+        height: auto;
         background-size: 310%;
     }
     
     .salata_kep {
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: 2 / 1 / 3 / 2;
         background: url(../kepek/salata.jpg) no-repeat center;
         padding-top: 80%;
-        height: 275px;
+        height: auto;
         background-size: 140%;
     }
     
     .Pizza_kep {
-        grid-area: 4 / 1 / 5 / 2;
+        grid-area: 3 / 1 / 4 / 2;
         background: url(../kepek/Pizza.jpg) no-repeat center;
         padding-top: 80%;
-        height: 275px;
+        height: auto;
         background-size: 110%;
     }
     
     .leves_kep {
         grid-area: 5 / 1 / 6 / 2;
         background: url(../kepek/leves.jpg) no-repeat center;
-        padding-top: 65%;
-        margin-top: -80px;
-        height: 200px;
+        padding-top: 60%;
+        height: auto;
         background-size: 110%;
         background-position: 52% 54%;
+        margin: 0;
     }
     
+    .nyitva {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.4fr) 5fr 0.4fr 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 0;
+        width: 70%;
+        height: auto;
+        margin: 0% auto 0%;
+    }
+    
+    .var {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .ido1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .proba1 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .ido2{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .proba2 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
 }
